@@ -1,0 +1,23 @@
+spring:
+  banner:
+    location: classpath:banner.txt
+  application:
+    name: transactions
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        connection:
+          isolation: TRANSACTION_READ_COMMITTED
+  datasource:
+    url: jdbc:derby:database;create=true
+    username: sa
+    password: password
+    type: org.apache.commons.dbcp2.BasicDataSource
+    dbcp2:
+      max-total: 10
+  threads:
+    virtual:
+      enabled: true

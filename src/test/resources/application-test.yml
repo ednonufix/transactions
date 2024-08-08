@@ -1,0 +1,16 @@
+spring:
+  banner:
+    location: classpath:banner.txt
+  application:
+    name: transactions
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        connection:
+          isolation: TRANSACTION_READ_COMMITTED
+  datasource:
+    url: jdbc:derby:memory:transactions;create=true
+    type: org.apache.commons.dbcp2.BasicDataSource
