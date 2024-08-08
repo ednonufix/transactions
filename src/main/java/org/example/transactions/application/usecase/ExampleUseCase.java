@@ -1,7 +1,7 @@
 package org.example.transactions.application.usecase;
 
 import org.example.transactions.domain.port.ExampleDefinitions;
-import org.example.transactions.domain.port.domain.Example;
+import org.example.transactions.domain.port.model.Example;
 
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

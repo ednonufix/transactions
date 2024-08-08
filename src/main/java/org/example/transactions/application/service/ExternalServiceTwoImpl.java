@@ -1,6 +1,6 @@
 package org.example.transactions.application.service;
 
-import org.example.transactions.domain.port.domain.Example;
+import org.example.transactions.domain.port.model.Example;
 import org.example.transactions.domain.port.service.ExternalServiceTwo;
 
 import org.springframework.stereotype.Service;

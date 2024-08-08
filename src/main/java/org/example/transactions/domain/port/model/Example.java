@@ -1,4 +1,4 @@
-package org.example.transactions.domain.port.domain;
+package org.example.transactions.domain.port.model;
 
 import java.io.Serializable;
 

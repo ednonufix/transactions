@@ -1,7 +1,7 @@
 package org.example.transactions.infrastructure;
 
 import org.example.transactions.domain.port.ExampleDefinitions;
-import org.example.transactions.domain.port.domain.Example;
+import org.example.transactions.domain.port.model.Example;
 import org.example.transactions.infrastructure.adapter.persistence.jpa.mapper.ExampleMapper;
 import org.example.transactions.infrastructure.adapter.persistence.jpa.transaction.JpaTransactionManager;
 import org.example.transactions.infrastructure.adapter.persistence.jpa.wrapper.ExternalServiceOneWrapper;

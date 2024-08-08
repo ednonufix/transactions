@@ -1,7 +1,7 @@
 package org.example.transactions.infrastructure.adapter.rest.controller;
 
 import org.example.transactions.application.usecase.ExampleUseCase;
-import org.example.transactions.domain.port.domain.Example;
+import org.example.transactions.domain.port.model.Example;
 import org.example.transactions.infrastructure.adapter.rest.ui.ExampleRestUI;
 
 import org.springframework.web.bind.annotation.RestController;
