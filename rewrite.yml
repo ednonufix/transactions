@@ -1,0 +1,28 @@
+---
+type: specs.openrewrite.org/v1beta/style
+name: org.example.transactions.Style
+styleConfigs:
+  - org.openrewrite.java.style.ImportLayoutStyle:
+      classCountToUseStarImport: 999
+      nameCountToUseStarImport: 999
+      layout:
+        - import org.example.transactions.*
+        - import static org.example.transactions.*
+        - <blank line>
+        - import org.springframework.*
+        - import reactor.*
+        - <blank line>
+        - import all other imports
+        - <blank line>
+        - import jakarta.*
+        - import java.*
+        - <blank line>
+        - import lombok.*
+        - <blank line>
+        - import static all other imports
+  - org.openrewrite.java.style.TabsAndIndentsStyle:
+      useTabCharacter: true
+      tabSize: 4
+      indentSize: 4
+      continuationIndent: 4
+      indentsRelativeToExpressionStart: true
