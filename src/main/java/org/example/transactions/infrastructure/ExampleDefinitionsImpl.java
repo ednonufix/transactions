@@ -1,7 +1,5 @@
 package org.example.transactions.infrastructure;
 
-import org.springframework.stereotype.Service;
-
 import org.example.transactions.domain.port.ExampleDefinitions;
 import org.example.transactions.domain.port.domain.Example;
 import org.example.transactions.infrastructure.adapter.persistence.jpa.mapper.ExampleMapper;
@@ -9,10 +7,12 @@ import org.example.transactions.infrastructure.adapter.persistence.jpa.transacti
 import org.example.transactions.infrastructure.adapter.persistence.jpa.wrapper.ExternalServiceOneWrapper;
 import org.example.transactions.infrastructure.adapter.persistence.jpa.wrapper.ExternalServiceTwoWrapper;
 
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RequiredArgsConstructor
