@@ -1,6 +1,6 @@
 package org.example.transactions.infrastructure.adapter.rest.ui;
 
-import org.example.transactions.domain.port.domain.Example;
+import org.example.transactions.domain.port.model.Example;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
